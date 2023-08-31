@@ -1,0 +1,41 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.accent-red {
+    color: #FF1F3D;
+}
+
+.red-bg {
+    background-color: #FF1F3D;
+}
+
+.accent-blackk {
+    color: #252525;
+}
+
+.black-bg {
+    background-color: #252525;
+}
+
+.accent-grey {
+    color: rgba(37, 37, 37, 0.15);
+}
+
+.grey-bg {
+    background-color: rgba(37, 37, 37, 0.15);
+}
+
+/* defalult css done */
+
+
+@media screen and (max-width: 426px) {
+    .logo {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
