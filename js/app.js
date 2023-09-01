@@ -16,11 +16,15 @@ const loadVideo = async (categoryId) => {
 
 
     const cardContainer = document.getElementById('card-container')
+    cardContainer.innerHTML = '';
+
+    data.data.length === 0 ? document.getElementById('error').classList.remove('hidden') : document.getElementById('error').classList.add('hidden');
+
     data.data.forEach(video => {
         const div = document.createElement('div');
         div.innerHTML = `<div class="card cursor-pointer">
                                 <div style="background: url('${video.thumbnail}'); background-position: center center; background-size: cover; background-repeat: no-repeat;" class="w-full relative rounded-xl h-52">
-                                    <div class="time">${video.others.posted_date ? parseInt(video.others.posted_date / 3600) + 'hours and ' : ''}${video.others.posted_date ? parseInt((video.others.posted_date % 3600) / 60) + 'minutes ago' : ''}</div>
+                                    ${video.others.posted_date ? `<div id="time" class="time">${parseInt(video.others.posted_date / 3600)+' hours and '}${parseInt((video.others.posted_date % 3600) / 60)+' minutes ago'}</div>` : ''}
                                 </div>
 
                             <div class="info">
@@ -37,9 +41,10 @@ const loadVideo = async (categoryId) => {
                         </div>`
             ;
         cardContainer.appendChild(div);
-        console.log(video.others.posted_date)
+        console.log(data.data)
 
     })
 }
 
 loadCategory();
+loadVideo(1000);
