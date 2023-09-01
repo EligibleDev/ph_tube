@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH Tube</title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
     <!-- inter font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,19 +24,94 @@
 
 </head>
 
-<body>
-    <header class="p-14 flex justify-between items-center">
-        <div class="logo flex justify-start items-center">
+<body class="p-14">
+    <header class="flex justify-between items-center">
+        <div class="logo gap-2 flex justify-start items-center">
             <img src="./images/logo.png" alt="">
             <h1 class="text-3xl font-bold">
-                <span class="accent-red">PH</span> 
+                <span class="accent-red">PH</span>
                 <span class="accent-blackk">Tube</span>
             </h1>
         </div>
 
-        <button class="px-5 py-2 rounded accent-blackk grey-bg">Sort by view</button>
-        <button class="px-5 py-2 rounded text-white red-bg">Blog</button>
+        <button class="px-5 py-2 rounded font-medium accent-blackk grey-bg">Sort by view</button>
+        <button class="px-5 py-2 rounded font-medium text-white red-bg">Blog</button>
     </header>
+
+    <hr class="my-10 grey-bg h-[1.5px]">
+
+    <!-- <div class="button-holder pb-10">
+        <button class="px-4 py-1 rounded accent-blackk grey-bg">All</button>
+        <button class="px-4 py-1 rounded accent-blackk grey-bg">Music</button>
+        <button class="px-4 py-1 rounded accent-blackk grey-bg">Comedy</button>
+        <button class="px-4 py-1 rounded accent-blackk grey-bg">Drawing</button>
+    </div> -->
+
+    <div id="tab-container" class="tabs tabs-boxed button-holder"></div>
+
+    <div id="card-container" class="card-container">
+        <!-- <div class="card">
+            <img src="./images/demo_card_image.png" alt="">
+            <div class="info">
+                <img src="./images/demo_profile.png" alt="">
+                <div class="video-info">
+                    <h3 class="post-title">Building a Winning UX Strategy Using the Kano Model</h3 class="post-title">
+                    <div>
+                        <p>Awlad Hossain</p>
+                        <img src="./images/bluetick.png" alt="">
+                    </div>
+                    <p>91K views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/demo_card_image.png" alt="">
+            <div class="info">
+                <img src="./images/demo_profile.png" alt="">
+                <div class="video-info">
+                    <h3 class="post-title">Building a Winning UX Strategy Using the Kano Model</h3 class="post-title">
+                    <div>
+                        <p>Awlad Hossain</p>
+                        <img src="./images/bluetick.png" alt="">
+                    </div>
+                    <p>91K views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/demo_card_image.png" alt="">
+            <div class="info">
+                <img src="./images/demo_profile.png" alt="">
+                <div class="video-info">
+                    <h3 class="post-title">Building a Winning UX Strategy Using the Kano Model</h3 class="post-title">
+                    <div>
+                        <p>Awlad Hossain</p>
+                        <img src="./images/bluetick.png" alt="">
+                    </div>
+                    <p>91K views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/demo_card_image.png" alt="">
+            <div class="info">
+                <img src="./images/demo_profile.png" alt="">
+                <div class="video-info">
+                    <h3 class="post-title">Building a Winning UX Strategy Using the Kano Model</h3 class="post-title">
+                    <div>
+                        <p>Awlad Hossain</p>
+                        <img src="./images/bluetick.png" alt="">
+                    </div>
+                    <p>91K views</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
 
     <!-- script files -->
     <script src="./js/app.js"></script>
