@@ -19,22 +19,25 @@ const loadVideo = async (categoryId) => {
     data.data.forEach(video => {
         const div = document.createElement('div');
         div.innerHTML = `<div class="card cursor-pointer">
-                            <img class="w-full rounded-xl h-52" src="${video.thumbnail}" alt="">
+                                <div style="background: url('${video.thumbnail}'); background-position: center center; background-size: cover; background-repeat: no-repeat;" class="w-full relative rounded-xl h-52">
+                                    <div class="time">${video.others.posted_date ? parseInt(video.others.posted_date / 3600) + 'hours and ' : ''}${video.others.posted_date ? parseInt((video.others.posted_date % 3600) / 60) + 'minutes ago' : ''}</div>
+                                </div>
+
                             <div class="info">
                                 <img class="w-10 h-10 rounded-full" src="${video.authors[0].profile_picture}" alt="">
                                 <div class="video-info">
                                     <h3 class="post-title">${video.title}</h3 class="post-title">
                                     <div>
                                         <p>${video.authors[0].profile_name}</p>
-                                        <img class="" id="bluetick" src="${video.authors[0]?.verified ? `../images/bluetick.png` : ""}" alt="">
+                                        <img class="" id="bluetick" src="${video.authors[0].verified ? `../images/bluetick.png` : ""}" alt="">
                                     </div>
                                     <p>${video.others.views} views</p>
                                 </div>
                             </div>
                         </div>`
-                        ;
+            ;
         cardContainer.appendChild(div);
-        console.log(video)
+        console.log(video.others.posted_date)
 
     })
 }

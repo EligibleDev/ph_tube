@@ -27,7 +27,9 @@
 }
 
 /* defalult css done */
-
+.logo{
+    cursor: pointer;
+}
 
 .button-holder {
     display: flex;
@@ -73,6 +75,18 @@ h3.post-title {
     justify-content: start;
     align-items: center;
     gap: 5px;
+}
+.time{
+    background-color: #171717;
+    color: white;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* normal css end */
