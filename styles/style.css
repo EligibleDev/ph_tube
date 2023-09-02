@@ -109,6 +109,20 @@ h3.post-title {
     margin:0px auto;
 }
 
+/* blog css start */
+
+.qna{
+    width: 65%;
+    margin: 50px auto;
+}
+
+.blog-title{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 800;
+}
+
 /* normal css end */
 
 @media screen and (max-width: 769px) {
@@ -118,6 +132,10 @@ h3.post-title {
 
     .error-message{
         width: 75%;
+    }
+
+    .qna{
+        width: 80%;
     }
 }
 
@@ -141,5 +159,14 @@ h3.post-title {
 
     .error-message{
         width: 100%;
+    }
+
+    
+    .blog-title{
+        font-size: 35px;
+    }
+
+    .qna{
+        width: 95%;
     }
 }

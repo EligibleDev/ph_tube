@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube - Answer of the assignment questions</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- inter font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1 class="blog-title">Answer of the assignment questions</h1>
+
+    <!-- accordion section -->
+    <div class="qna">
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border border-base-300">
+                <input type="radio" name="my-accordion-4"/>
+                <div class="collapse-title text-xl font-medium">
+                    Discuss the scope of var, let, and const
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        <b>var:</b><br>
+                        var declarations have function scope, meaning they are accessible throughout the entire function
+                        in which they are declared.
+                        If declared outside any function, they become global variables and are accessible throughout the
+                        entire program.<br><br>
+                        <b>let:</b><br>
+
+                        let declarations have block scope, which confines them to the block (enclosed by curly braces
+                        {}) in which they are defined.
+                        Variables declared with let are only accessible within the block where they are
+                        declared.<br><br>
+                        <b>const:</b><br>
+
+                        const declarations also have block scope, just like let.
+                        However, const variables must be assigned a value when declared, and they cannot be reassigned
+                        to a different value after that assignment.
+                        While the variable itself cannot be reassigned, if the value is an object or array, the
+                        properties or elements of the object or array can be modified. <br><br>
+                        In summary, var has broader scope (function or global), let has a narrower scope (block), and
+                        const is like let but enforces immutability for the variable itself (although its contents can
+                        still be changed if it's an object or array). These scoping rules help ensure that variables are
+                        used where and how they are intended, reducing potential bugs and unintended side effects in
+                        your JavaScript code.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-base-300">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">
+                    Tell us the use cases of null and undefined
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        <b>null:</b><br>
+
+                        null is used to represent the intentional absence of any object value or value in general. It is
+                        typically assigned by the programmer to indicate that a variable, object property, or function
+                        return should have no value.
+                        For example, you might use null to reset a variable that previously held an object reference or
+                        to indicate that a function didn't return a valid result. <br><br>
+                        <b>undefined:</b><br>
+
+                        undefined is the default value for variables and object properties that have been declared but
+                        haven't been assigned a value. It indicates that the value is missing or uninitialized.
+                        It's often seen as a result when accessing properties or variables that don't exist, or when a
+                        function doesn't explicitly return a value.
+                        It can also be explicitly assigned to variables or properties to indicate that they are meant to
+                        have no value or haven't been set yet. <br><br>
+                        In summary, null is used to represent intentional absence or lack of value, while undefined is
+                        typically used to indicate that a variable or property has not been assigned any value or that a
+                        function doesn't return a value. Both are important for handling and managing data in JavaScript
+                        programs.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-base-300">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">
+                    What do you mean by REST API?
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        REST API, which stands for Representational State Transfer Application Programming Interface, is
+                        a set of architectural principles and constraints used for designing networked applications and
+                        services. It is a style of designing networked applications where resources are defined and
+                        manipulated using a small, predefined set of operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
